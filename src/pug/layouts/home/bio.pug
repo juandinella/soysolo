@@ -2,8 +2,9 @@ section.bio
   .container
     .row
       .col-md-12
-        img(src='assets/images/leo.jpg', srcset='assets/images/leo.jpg 1x, assets/images/leo@2x.jpg 2x', alt='Leo Piccioli')
-        .bio--text
+        div(data-aos="fade-right")
+          img(src='assets/images/leo.jpg', srcset='assets/images/leo.jpg 1x, assets/images/leo@2x.jpg 2x', alt='Leo Piccioli')
+        .bio--text(data-aos="fade-left")
           h3 Leo Piccioli
           p 46 años y dos hijos adolescentes es licenciado en Economía cum laudae de la Universidad de Buenos Aires.
 
@@ -18,7 +19,7 @@ section.bio
             li.in: a(href="", title="", target="_blank"): +svg('linkedin')
             li.link: a(href="", title="", target="_blank"): +svg('link')
               
-    .row.bio--video
+    .row.bio--video(data-aos="fade-up")
       .col-md-12
         .video-wrapper
           .video-container

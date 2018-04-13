@@ -2,10 +2,11 @@ section.hero
   .container
     .row
       .col-md-7
-        +img('book.png')
-      .col-md-5
+        div(data-aos="fade-right")
+          +img('book.png')
+      .col-md-5(data-aos="fade-up")
         hgroup
           h3 Leo Piccioli
           h1 Soy solo
           h2 Historias honestas de liderazgo #[strong para ser feliz en el siglo XXI y más allá]
-        a.btn(href="", title="") Comprar
+        a.btn(href="", title="" data-aos="fade-in", data-aos-delay="200") Comprar
