@@ -1,5 +1,4 @@
 import $ from 'jquery'
-
 import 'slick-carousel';
 
 const slider = $('.comments--slider')
@@ -10,5 +9,8 @@ slider.slick({
   focusOnSelect: false,
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 2
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 6000,
+  pauseOnHover: true
 });
