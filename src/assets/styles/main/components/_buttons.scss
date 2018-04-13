@@ -1,0 +1,26 @@
+.btn {
+  color: $black;
+  background-color: $yellow;
+  text-decoration: none;
+  border-radius: rem(25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(45);
+  width: rem(184);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.225s ease;
+
+  &:hover {
+    background-color: darken($yellow, 10%);
+  }
+}
+
+button {
+  font-family: $font;
+  outline: 0 none;
+  border: 0 none;
+  font-size: rem(14);
+  cursor: pointer;
+}

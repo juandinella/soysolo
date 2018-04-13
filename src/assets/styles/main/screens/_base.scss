@@ -1,0 +1,35 @@
+*, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  font-family: $system-fonts;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.wf-active {
+    font-family: $font;
+  }
+}
+
+body {
+  font: inherit;
+  line-height: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+a {
+  color: $black;
+}
+
+
+::selection {
+  background-color: $black;
+  color: $white;
+}

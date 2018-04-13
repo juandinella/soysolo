@@ -1,0 +1,15 @@
+.title {
+  font-size: rem(36);
+  font-weight: 600;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: rem(74);
+    height: rem(2);
+    left: calc(50% - 37px);
+    top: rem(-38);
+    background-color: #1E1D1C;
+  }
+}

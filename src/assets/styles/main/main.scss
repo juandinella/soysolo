@@ -1,22 +1,17 @@
-//
-// soysolo
-//
 @import 'variables';
 @import 'mixins';
 
-// We can use CSS modules
-// but for now its disabled
-// make sure your css is inside this :global
-// Happy Styling! Pixel2HTML
 :global {
-  // screens:start
   @import 'screens/base';
-  
-  @import 'screens/screen_1';
-  // screens:end
+  @import 'screens/home';
 
-  // components:start
-  @import 'components/forms';
+  @import 'components/audiobook';
+  @import 'components/bio';
   @import 'components/buttons';
-  // components:end
+  @import 'components/buy';
+  @import 'components/comments';
+  @import 'components/hero';
+  @import 'components/layout';
+  @import 'components/newsletter';
+  @import 'components/summary';
 }

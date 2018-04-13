@@ -1,0 +1,46 @@
+.hero {
+  background-color: $black;
+  height: rem(520);
+
+  @include breakpoint(md) {
+    height: rem(580);
+  }
+
+  .container,
+  .row {
+    height: 100%;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  hgroup {
+    margin-bottom: rem(35);
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $white;
+    font-size: rem(18);
+    letter-spacing: rem(3);
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: $white;
+    font-size: rem(48);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: rem(19);
+    color: $white;
+    line-height: 1.25;
+    width: rem(350);
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}

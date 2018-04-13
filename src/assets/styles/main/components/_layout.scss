@@ -1,0 +1,11 @@
+@include flexGrid;
+
+.container {
+  max-width: rem(1280);
+  padding: 0 rem(15);
+  margin: 0 auto;
+
+  @include breakpoint(md) {
+    padding: 0 rem(30);
+  }
+}

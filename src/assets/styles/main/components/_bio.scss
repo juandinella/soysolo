@@ -1,0 +1,110 @@
+.bio {
+  margin-top: rem(110);
+
+  .container {
+    position: relative;
+  }
+
+  &--text {
+    background: $white;
+    box-shadow: 0 1px 50px 0 rgba(157,157,157,0.30);
+    position: absolute;
+    width: rem(680);
+    top: rem(24);
+    left: 37%;
+    padding: rem(32) rem(20);
+  }
+
+  h3 {
+    font-size: rem(30);
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: rem(25);
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 1.6;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      margin-right: rem(15);
+
+      svg {
+        transition: all 0.225s ease;
+      }
+    }
+
+    .tw {
+      &:hover {
+        svg {
+          stroke: #00aced;
+        }
+      }
+    }
+
+    .fb {
+      &:hover {
+        svg {
+          stroke: #3B5998;
+        }
+      }
+    }
+
+    .ig {
+      &:hover {
+        svg {
+          stroke: #8a49a1;
+        }
+      }
+    }
+
+    .in {
+      &:hover {
+        svg {
+          stroke: #4875B4;
+        }
+      }
+    }
+
+    .link {
+      &:hover {
+        svg {
+          stroke: $yellow;
+        }
+      }
+    }
+  }
+
+  &--video {
+    margin-top: rem(90);
+  }
+}
+
+.video-wrapper {
+  max-width: rem(775);
+  margin: 0 auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  padding-bottom: 300px;
+}

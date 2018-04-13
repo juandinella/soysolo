@@ -1,0 +1,42 @@
+.summary {
+  margin-top: rem(96);
+  margin-bottom: rem(92);
+
+  header{
+    text-align: center;
+    margin-bottom: rem(56);
+  }
+
+  .col-md-6 {
+    padding: 0 rem(30);
+  }
+
+  p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: rem(14);
+    line-height: 2.14;
+    margin-bottom: rem(40);
+  }
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  &--text {
+    position: relative;
+  }
+
+  .quote-open {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: rem(-25);
+  }
+
+  .quote-close {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: rem(10);
+  }
+}
