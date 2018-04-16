@@ -2,9 +2,19 @@
   background-color: $black;
   height: rem(520);
   font-family: $font !important;
-  
+
   @include breakpoint(md) {
     height: rem(580);
+  }
+
+  &--content {
+    order: -1;
+    text-align: center;
+
+    @include breakpoint(md) {
+      order: 1;
+      text-align: left;
+    }
   }
 
   .container,
@@ -39,9 +49,35 @@
     color: $white;
     line-height: 1.25;
     width: rem(350);
+    margin: 0 auto;
+
+    @include breakpoint(md) {
+      margin-left: 0;
+    }
 
     strong {
       font-weight: 600;
+    }
+  }
+
+  .btn {
+    margin: 0 auto;
+
+    @include breakpoint(md) {
+      margin-left: 0;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: rem(315);
+    position: relative;
+    left: rem(-20);
+
+    @include breakpoint(md) {
+      width: 100%;
+      left: 0;
     }
   }
 }
