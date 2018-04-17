@@ -7,7 +7,8 @@
   h6 {
     font-weight: 600;
     font-size: rem(18);
-    width: rem(353);
+    max-width: rem(353);
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -17,7 +18,8 @@
 }
 
 #mc_embed_signup {
-  width: rem(352);
+  max-width: rem(352);
+  width: 100%;
   margin: 0 auto;
   margin-top: rem(44);
 
@@ -29,7 +31,8 @@
 
   input,
   input.mail {
-    width: rem(335) !important;
+    max-width: rem(335) !important;
+    width: 100% !important;
     height: rem(40);
     border: rem(1) solid #E3E9EB;
     font-family: $font;

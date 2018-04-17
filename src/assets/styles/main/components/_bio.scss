@@ -1,6 +1,7 @@
 .bio {
   margin-top: rem(36);
-
+  overflow: hidden;
+  
   @include breakpoint(md) {
     margin-top: rem(110);
   }

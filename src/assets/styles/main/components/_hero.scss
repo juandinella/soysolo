@@ -2,6 +2,7 @@
   background-color: $black;
   height: rem(520);
   font-family: $font !important;
+  overflow: hidden;
 
   @include breakpoint(md) {
     height: rem(580);
