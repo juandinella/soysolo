@@ -5,8 +5,12 @@
   }
 
   &--row {
-    margin-bottom: rem(50);
+    margin-bottom: 0;
     justify-content: center;
+
+    @include breakpoint(md) {
+      margin-bottom: rem(50);
+    }
   }
 
   &--block {
@@ -15,6 +19,11 @@
     text-align: center;
     padding: rem(25) rem(20);
     min-height: rem(310);
+    margin-bottom: rem(25);
+
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
 
     h5 {
       text-transform: uppercase;
@@ -48,6 +57,11 @@
         position: relative;
         top: rem(-19);
       }
+    }
+
+    .gratis {
+      font-size: rem(40);
+      top: 45%;
     }
 
     .btn {

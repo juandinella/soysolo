@@ -1,0 +1,60 @@
+.newsletter {
+  margin-top: rem(80);
+  background-color: $gray;
+  text-align: center;
+  padding: rem(38) 0;
+
+  h6 {
+    font-weight: 600;
+    font-size: rem(18);
+    width: rem(353);
+    margin: 0 auto;
+  }
+}
+
+.mc-field-group {
+  margin-bottom: rem(30);
+}
+
+#mc_embed_signup {
+  width: rem(352);
+  margin: 0 auto;
+  margin-top: rem(44);
+
+  label {
+    font-weight: 500;
+    padding-bottom: 0;
+    font-size: rem(14);
+  }
+
+  input,
+  input.mail {
+    width: rem(335) !important;
+    height: rem(40);
+    border: rem(1) solid #E3E9EB;
+    font-family: $font;
+    color: $black;
+    padding-left: rem(14) !important;
+    font-size: rem(14);
+  }
+}
+
+#mc_embed_signup input.button{
+  color: $black;
+  background-color: $yellow;
+  text-decoration: none;
+  border-radius: rem(25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(45);
+  width: rem(184);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.225s ease;
+  padding: 0!important;
+
+  &:hover {
+  background-color: darken($yellow, 10%);
+  }
+}

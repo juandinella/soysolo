@@ -12,5 +12,16 @@ slider.slick({
   slidesToScroll: 2,
   autoplay: true,
   autoplaySpeed: 6000,
-  pauseOnHover: true
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
 });

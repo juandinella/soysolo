@@ -1,5 +1,9 @@
 .comments {
-  margin-top: rem(120);
+  margin-top: rem(80);
+
+  @include breakpoint(md) {
+    margin-top: rem(120);
+  }
 
   header {
     text-align: center;

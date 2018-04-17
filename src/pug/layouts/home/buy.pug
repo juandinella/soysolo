@@ -1,4 +1,4 @@
-section.buy
+section.buy#comprar
   .container
     header.row
       .col-md-12
@@ -6,32 +6,38 @@ section.buy
     .row.buy--row
       .col-md-4
         .buy--block
-          h5 Premium #[span (papel)] + Envio
+          h5 Premium con envio
           p Libro tapa dura con envio solo en Argentina
           .price #[span $]800
           a.btn(href="", title="") Comprar
       .col-md-4
         .buy--block
-          h5 Premium #[span (papel)]
+          h5 Premium
           p Libro tapa dura que puedes comprar en las tiendas de Cúspide
           .price #[span $]720
-          a.btn(href="", title="") Ver Tiendas
+          a.btn(href="http://www.cuspide.com/locales-listado", title="", target="_blank") Ver Tiendas
       .col-md-4
         .buy--block
-          h5 Ebook
-          p 2 tomos de $200 cada uno
-          .price #[span $]200
-          a.btn(href="", title="") Comprar
+          h5 Libro gratis
+          p para periodistas, docentes y gente que no puede pagarlo
+          .price.gratis GRATIS
+          a.btn(href="https://docs.google.com/forms/d/e/1FAIpQLSfrT4bwW93yK_4F8_5I3RlsofLMBFmAuF2ohIF1V79VuUWH6w/viewform", title="", target="_blank") Solicitar
     .row.buy--row
       .col-md-4
         .buy--block
           h5 Audiolibro completo #[span (proximamente)]
           p Lorem Ipsum is simply dummy text of the printing and
           .price #[span $]500
-          a.btn(href="", title="") Bajar
+          a.btn(href="http://eepurl.com/cDLs95", title="", target="_blank") Avisarme
       .col-md-4
         .buy--block
-          h5 Premium #[span (papel)] + Envio
-          p Libro tapa dura con envio solo en Argentina
-          .price GRATIS
-          a.btn(href="", title="") Escuchar
+          h5 Audiolibro en cuotas
+          p Lorem Ipsum is simply dummy text of the printing and
+          .price.gratis GRATIS
+          a.btn(href="#audiolibro", title="") Escuchar
+      .col-md-4
+        .buy--block
+          h5 Ebook
+          p 2 tomos de $200 cada uno
+          .price #[span $]200
+          a.btn(href="", title="") Comprar
