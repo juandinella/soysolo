@@ -1,4 +1,5 @@
 import './fontLoader'
+import './lazy'
 import './slider'
 import './read-more'
 import './animations'

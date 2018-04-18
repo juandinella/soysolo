@@ -1,7 +1,7 @@
 .bio {
   margin-top: rem(36);
   overflow: hidden;
-  
+
   @include breakpoint(md) {
     margin-top: rem(110);
   }
@@ -13,6 +13,8 @@
   img {
     display: block;
     margin: 0 auto;
+    width: rem(626);
+    height: rem(484);
 
     @include breakpoint(md) {
       margin-left: 0;

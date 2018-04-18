@@ -20,8 +20,18 @@ body {
   padding-bottom: rem(30);
 }
 
+
 img {
   max-width: 100%;
+  transition: .2s;
+
+  &.lazyload {
+    filter: blur(2px);
+  }
+
+  &.lazyloaded {
+    filter: blur(0);
+  }
 }
 
 

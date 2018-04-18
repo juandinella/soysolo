@@ -3,7 +3,7 @@ section.bio
     .row
       .col-md-12
         div(data-aos="fade-right")
-          img(src='assets/images/leo.jpg', srcset='assets/images/leo.jpg 1x, assets/images/leo@2x.jpg 2x', alt='Leo Piccioli')
+          +vipImg('leo@2x.jpg', 'Leo Piccioli')
         .bio--text(data-aos="fade-left")
           h3 Leo Piccioli
           p Nació en 1971 y es licenciado en Economía cum laudae de la Universidad de Buenos Aires.
@@ -18,7 +18,7 @@ section.bio
             li.ig: a(href="https://www.instagram.com/leopiccioli/", title="Leo Piccioli Instagram", target="_blank", rel="noopener"): +svg('instagram')
             li.in: a(href="https://www.linkedin.com/in/leopiccioli/", title="Leo Piccioli Linkedin", target="_blank", rel="noopener"): +svg('linkedin')
             li.link: a(href="http://www.leopiccioli.com.ar/es/", title="Leo Piccioli sitio web", target="_blank", rel="noopener"): +svg('link')
-    .bio--video(data-aos="fade-up")
+    .bio--video
       .row
         .col-md-12
           .video-wrapper
