@@ -14,7 +14,7 @@
     display: block;
     margin: 0 auto;
     width: rem(626);
-    height: rem(484);
+    height: auto;
 
     @include breakpoint(md) {
       margin-left: 0;
