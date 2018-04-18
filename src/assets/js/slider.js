@@ -13,6 +13,7 @@ slider.slick({
   autoplay: true,
   autoplaySpeed: 6000,
   pauseOnHover: true,
+  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -20,7 +21,8 @@ slider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: true,
+        adaptiveHeight: false
       }
     }
   ]

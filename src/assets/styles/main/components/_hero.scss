@@ -49,11 +49,12 @@
     font-size: rem(19);
     color: $white;
     line-height: 1.25;
-    width: rem(350);
+    width: 100%;
     margin: 0 auto;
 
     @include breakpoint(md) {
       margin-left: 0;
+      width: rem(350);
     }
 
     strong {
