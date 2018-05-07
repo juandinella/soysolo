@@ -2,16 +2,25 @@ doctype html
 html(lang='en')
   head
     block title
-      title Soy solo - Leo Piccioli
+      title SOY SOLO - HISTORIAS HONESTAS DE LIDERAZGO PARA SER FELIZ EN EL SIGLO XXI Y MÁS ALLÁ
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name='description' content='soysolo')
+    meta(name='description' content='Soy solo - Historias honestas de liderazgo para ser feliz en el siglo XXI y más allá de Leo Piccioli')
+    meta(name='keywords' content='liderazgo, management, disrupción, cambio, líder, líderes, officenet, orador, linkedin, coaching, motivación, curso, buen líder,libro, ebook, audiolibro,emprender, carrera, emprendedor, entrepreneur, entrepreneurship, motivación, gerente general, CEO, diferenciación, futuro, crisis, cambio, crecimiento, liderazgo empresarial,business management, trabajo en equipo, emprender un negocio, negocios, negocios rentables')
+    meta(name='author' content='Leo Piccioli')
     link(rel='manifest' href='assets/head/manifest.json')
     link(rel="shortcut icon" href="assets/head/favicon.ico")
     link(rel="icon" type="image/png" href="assets/head/favicon-32.png")
     link(rel="icon" type="image/png" href="assets/head/favicon-16.png")
-    link(href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css")
+    link(href="http://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css")
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='Soy solo - Leo Piccioli')
+    meta(property='og:description', content='SOY SOLO - HISTORIAS HONESTAS DE LIDERAZGO PARA SER FELIZ EN EL SIGLO XXI Y MÁS ALLÁ')
+    meta(property='og:url', content='https://www.soysolo.com.ar')
+    meta(property='og:site_name', content='Leo Piccioli')
+    meta(property='og:image', content='https://www.soysolo.com.ar/assets/images/leo.jpg')
+
     if production
       link(rel='stylesheet', href='assets/css/vendor.min.css')
       link(rel='stylesheet', href='assets/css/main.min.css')
@@ -31,7 +40,47 @@ html(lang='en')
       //- If extra footer content is necessary per page, it can be added per screen
 
     if production
-      script(src='//code.jquery.com/jquery-3.3.1.min.js')
-    script(src='assets/js/main.js' async)
+      script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+      script(src='assets/js/main.js')
+    else
+      script(src='assets/js/main.js')
     block scripts
-      //- Also if more scripts are needed you can hook in here <3
+      script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-84718322-2')
+      script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-84718322-2');
+      script.
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('init','nz7wi');
+        twq('track','PageView');
+      script.
+        _linkedin_data_partner_id = "45059";
+      script.
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+      noscript
+        img(height='1', width='1', style='display:none;', alt='', src='https://dc.ads.linkedin.com/collect/?pid=45059&fmt=gif')
+          
+      script.
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '884552981669507');
+        fbq('track', 'PageView');
+      noscript
+        img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=884552981669507&ev=PageView&noscript=1')
+          
+      script#mcjs.
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/de0d1407b92a9bc1558a92231/b3978fe2cba450bcb92f04e99.js");

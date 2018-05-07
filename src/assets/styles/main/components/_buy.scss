@@ -73,3 +73,23 @@
     }
   }
 }
+
+
+.proximamente {
+  background-color: $gray;
+  padding: rem(25) 0;
+
+  header{
+    text-align: center;
+
+    h2 {
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  #mc_embed_signup {
+    margin-top: rem(20);
+  }
+}
