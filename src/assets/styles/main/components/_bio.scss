@@ -1,9 +1,10 @@
 .bio {
   margin-top: rem(36);
-  overflow: hidden;
+  overflow: initial;
 
   @include breakpoint(md) {
     margin-top: rem(110);
+    overflow: hidden;
   }
 
   .container {
@@ -13,11 +14,12 @@
   img {
     display: block;
     margin: 0 auto;
-    width: rem(626);
+    width: 100%;
     height: auto;
 
     @include breakpoint(md) {
       margin-left: 0;
+      width: rem(626);
     }
   }
 
@@ -101,7 +103,7 @@
 
   &--video {
     margin-top: rem(90);
-    display: none;
+    display: block;
 
     @include breakpoint(md) {
       display: block;
